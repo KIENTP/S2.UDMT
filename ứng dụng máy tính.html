@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form>
+    <input type="text" name="amount" id="amount1" style="width:170px;">
+    <input type="text" name="amount" id="amount2">
+    <br>
+    <br>
+    <button type="button" onclick="Addition();">Addition(+)</button>
+    <button type="button" onclick="Subtraction();">Subtraction(-)</button>
+    <button type="button" onclick="Mulliplication();">Mulliplication(*)</button>
+    <button type="button" onclick="Division();">Division(/)</button>
+</form>
+</body>
+<script>
+
+
+    function Addition() {
+        var a = document.getElementById("amount1").value;
+        var b = document.getElementById("amount2").value;
+        var result = parseInt(a) + parseInt(b);
+        alert(result);
+    }
+
+    function Subtraction() {
+        var a = document.getElementById("amount1").value;
+        var b = document.getElementById("amount2").value;
+        var result = parseInt(a) - parseInt(b);
+        alert(result);
+    }
+
+    function Mulliplication() {
+        var a = document.getElementById("amount1").value;
+        var b = document.getElementById("amount2").value;
+        var result = parseInt(a) * parseInt(b);
+        alert(result);
+    }
+
+    function Division() {
+        var a = document.getElementById("amount1").value;
+        var b = document.getElementById("amount2").value;
+        var result = parseInt(a) / parseInt(b);
+        alert(result);
+    }
+
+
+</script>
+</html>
